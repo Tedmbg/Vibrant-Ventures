@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+ <style>
+    body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background:linear-gradient(90deg,#ff3532,#ff884a);
+}
+
+.contact .content {
+  max-width: 100%;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.container .contactInfo {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container .contactInfo .box h3 {
+  font-weight: 500;
+  color: aqua;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.contactForm {
+  width: 100%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputbox[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 50px 100px;
+  }
+
+  .container .contactInfo {
+    width: 50%;
+  }
+
+  .contactForm {
+    width: 40%;
+  }
+}
+/*navbar*/
+.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff884a;
+      z-index: 999;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10px;      
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-item {
+      margin-left: 20px;
+      font-size: 1.7rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+   
+    /* Media query for responsive design */
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .navbar-item {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+    }   
+
+/*footer*/
+.footer {
+    background-color: #140e02;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: #e6e4e4;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .social-links a:hover {
+    color: #7a2b2b;
+  }
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-twitter {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-instagram:hover {
+    color: #c13584;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #dbd1d1;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content:space-evenly;
+      text-align: left;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+    }
+
+    .social-links a:last-child {
+      margin-right: 0;
+    }
+  }
+
+.footer {
+    background-color: #140e02;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: #e6e4e4;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .social-links a:hover {
+    color: #7a2b2b;
+  }
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-twitter {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-instagram:hover {
+    color: #c13584;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #dbd1d1;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content:space-evenly;
+      text-align: left;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+    }
+
+    .social-links a:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+ </style>
+</head>
+<!--Navbar-->
+<section>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">Vibrant Adventures</a>
+      <ul class="navbar-menu">
+        <li><a href="./index.html" class="navbar-item">Home</a></li>
+        <li><a href="./services.html" class="navbar-item">Services</a></li>
+        <li><a href="./about.html" class="navbar-item">About Us</a></li>
+        <li><a href="./contactus.html" class="navbar-item">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</section>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2> Contact Us</h2>
+            <p> We are thrilled to assist you with any inquiries or feedback you may have. Please don't hesitate to reach out to us using the 
+                following contact details or by filling out the contact form below
+                We look forward to hearing from you and helping you plan your dream vacation! 
+                Our dedicated team is committed to providing exceptional customer service and ensuring your travel experience is unforgettable.
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Nairobi,<br> Kenya</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Phone Number</h3>
+                        <p> +254745561369<br> +254785595589</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p> vibrant36@ventures.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2> Send messages</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span> Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span> Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span> Type your Message</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="social-links">
+              <a href="https://www.instagram.com/your_instagram_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/your_facebook_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com/your_twitter_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+              &copy; 2023 Vibrant Adventures. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>     
+    </section>
+</body>
+</html>
+

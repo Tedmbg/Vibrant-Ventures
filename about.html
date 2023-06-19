@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Vibrant Ventures</title>
+  
+  <style type="text/css">
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FEA572;
+      padding: 20px;
+      margin: 0;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .columns {
+      display: flex;
+      justify-content: space-between;
+    }
+    .One, .Two {
+      flex-basis: 48%;
+    }
+    h1 {
+      color: #000000;
+      font-size: 24px;
+    }
+    h3 {
+      color: #000000;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    p {
+      color: #000000;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    /*Navbar*/
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff884a;
+      z-index: 999;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-evenly ;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-item {
+      margin-left: 20px;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* Media query for responsive design */
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+      }
+  
+      .navbar-item {
+        margin: 10px 0;
+      }
+    }
+    /*footer*/
+  .footer {
+    background-color: #140e02;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: #e6e4e4;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .social-links a:hover {
+    color: #7a2b2b;
+  }
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-twitter {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-instagram:hover {
+    color: #c13584;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #dbd1d1;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content:space-evenly;
+      text-align: left;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+    }
+
+    .social-links a:last-child {
+      margin-right: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">Vibrant Adventures</a>
+        <ul class="navbar-menu">
+          <li><a href="./index.html" class="navbar-item">Home</a></li>
+          <li><a href="./services.html" class="navbar-item">Services</a></li>
+          <li><a href="./about.html" class="navbar-item">About Us</a></li>
+          <li><a href="./contactus.html" class="navbar-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section> 
+  <div class="header">
+    <h1>About Us</h1>
+  </div>
+  
+  <div class="columns">
+   
+    <div class="One">
+      <h3>Our Philosophy</h3>
+      <p>
+        We believe in the power of travel to transform lives and broaden horizons. That's why we are committed to creating meaningful and enriching travel experiences for our clients. Whether you're a solo adventurer, a couple seeking a romantic getaway, or a family looking to create lasting memories, we have the perfect journey for you.
+      </p>
+
+      <h3>Our Approach</h3>
+      <p>
+        We understand that every traveler is unique, and that's why we offer personalized travel solutions tailored to your preferences and interests. Our team takes the time to understand your travel aspirations and curates bespoke itineraries that reflect your individuality. Whether you're seeking adventure, relaxation, cultural immersion, or a combination of everything, we will design a journey that perfectly suits you.
+      </p>
+    </div>
+    
+    <div class="Two">
+      <h3>Our Expert Team</h3>
+      <p>
+        With years of experience in the travel industry, our team of dedicated travel experts is here to guide you every step of the way. From the moment you contact us to the completion of your trip, we are committed to providing exceptional service and ensuring that every aspect of your travel experience exceeds your expectations.
+      </p>
+
+      <h3>Join Us on a Vibrant Journey</h3>
+      <p>
+        We invite you to embark on a vibrant journey with us and discover the world in a way you've never imagined. Let us take care of the logistics while you focus on creating unforgettable memories. Explore our diverse range of destinations and itineraries, and get in touch with our team to start planning your dream getaway.<br>
+        Come and experience the world with Vibrant Ventures – where every journey is an adventure of a lifetime.
+      </p>
+    </div>  
+  </div>
+  <section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a href="https://www.instagram.com/your_instagram_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/your_facebook_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/your_twitter_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="copyright">
+            &copy; 2023 Vibrant Adventures. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>           
+  </section>
+</body>
+</html>

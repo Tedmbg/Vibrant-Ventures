@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cite.css">
+  <title>Cite.Ventures</title>
+  <style>
+    /*Navbar*/
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff884a;
+      z-index: 999;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-evenly ;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-item {
+      margin-left: 20px;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* Media query for responsive design */
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+      }
+  
+      .navbar-item {
+        margin: 10px 0;
+      }
+    }
+    /*form*/
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: linear-gradient(90deg,#0499af, #70d261);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color:hsla(149, 70%, 74%, 0.365);
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+  }
+}
+/*footer*/
+.footer {
+    background-color: #140e02;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: #e6e4e4;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .social-links a:hover {
+    color: #7a2b2b;
+  }
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-twitter {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-instagram:hover {
+    color: #c13584;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #dbd1d1;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content:space-evenly;
+      text-align: left;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+    }
+
+    .social-links a:last-child {
+      margin-right: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">Vibrant Adventures</a>
+        <ul class="navbar-menu">
+          <li><a href="./index.html" class="navbar-item">Home</a></li>
+          <li><a href="./services.html" class="navbar-item">Services</a></li>
+          <li><a href="./about.html" class="navbar-item">About Us</a></li>
+          <li><a href="./contactus.html" class="navbar-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <h1>Book a Tour</h1>
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a href="https://www.instagram.com/your_instagram_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/your_facebook_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/your_twitter_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="copyright">
+            &copy; 2023 Vibrant Adventures. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>           
+  </section>
+</body>
+</html>

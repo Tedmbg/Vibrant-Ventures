@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours and Travels - Services</title>
+  <style>
+    /*NAvbar*/
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff884a;
+      z-index: 999;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-evenly ;
+      align-items: center;
+      padding: 7px;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-item {
+      margin-left: 20px;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* Media query for responsive design */
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+      }
+  
+      .navbar-item {
+        margin: 10px 0;
+      }
+    }
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background:linear-gradient(90deg,#ff3532, #ff884a);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .service {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .service p {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .service .price {
+      font-weight: bold;
+    }
+
+    .package-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .view-more {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #4d2003;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-more:hover {
+      background-color: #e2a9a2;
+    }
+
+    @media screen and (min-width: 600px) {
+      .service {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .service p {
+        text-align: left;
+      }
+
+      .package-image {
+        max-width: 300px;
+        margin-right: 20px;
+      }
+    }
+    /*footer*/
+    .footer {
+    background-color: #140e02;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: #e6e4e4;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .social-links a:hover {
+    color: #7a2b2b;
+  }
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-twitter {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .fa-instagram:hover {
+    color: #c13584;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #dbd1d1;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content:space-evenly;
+      text-align: left;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+    }
+
+    .social-links a:last-child {
+      margin-right: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <!--NAvbar-->
+  <section>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">Vibrant Adventures</a>
+        <ul class="navbar-menu">
+          <li><a href="./index.html" class="navbar-item">Home</a></li>
+          <li><a href="./services.html" class="navbar-item">Services</a></li>
+          <li><a href="./about.html" class="navbar-item">About Us</a></li>
+          <li><a href="./contactus.html" class="navbar-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <div class="container">
+    <h1>Our Services</h1>
+    <section id="safari">
+      <div class="service">
+        <img src="https://d2g6byanrj0o4m.cloudfront.net/images/54549/day_1_-_game_drive_at_okonjima_nature_reserve_3_(1).jpg" alt="Safari Tour" class="package-image">
+        <div>
+          <h2>Safari Tours</h2>
+          <p>Embark on an exciting safari adventure and explore the breathtaking wildlife in their natural habitats.</p>
+          <p class="price">$500 per person</p>
+          <a href="./safari.html" class="view-more">Get Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="adventure">
+      <div class="service">
+        <img src="https://www.macmillandictionaryblog.com/wp-content/uploads/2018/06/Depositphotos_72118509_m-2015-810x478.jpg" alt="Adventure Tour" class="package-image">
+        <div>
+          <h2>Adventure Tours</h2>
+          <p>Experience thrilling adventures with activities like hiking, rafting, bungee jumping, and more.</p>
+          <p class="price">$300 per person</p>
+          <a href="./adventure.html" class="view-more">Get Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sightseeing">
+      <div class="service">
+        <img src="https://media.timeout.com/images/105485850/image.jpg" alt="Sightseeing Tour" class="package-image">
+        <div>
+          <h2>Citeseeing Tours</h2>
+          <p>Discover the beauty of famous landmarks and cultural sites with our guided sightseeing tours.</p>
+          <p class="price">$200 per person</p>
+          <a href="./cite.html" class="view-more">Get Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="staycation">
+      <div class="service">
+        <img src="https://img.freepik.com/premium-photo/beach-chair-around-swimming-pool-hotel-resort-with-sea-beach_1339-128722.jpg" alt="Staycation Package" class="package-image">
+        <div>
+          <h2>Staycation Packages</h2>
+          <p>Indulge in a relaxing staycation at luxurious resorts and enjoy amenities like spa treatments and fine dining.</p>
+          <p class="price">$400 per person</p>
+          <a href="./stay.html" class="view-more">Get Quote</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!---footer-->
+  <section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a href="https://www.instagram.com/your_instagram_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/your_facebook_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/your_twitter_account" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="copyright">
+            &copy; 2023 Vibrant Adventures. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer> 
+  </section>
+</body>
+
+</html>
